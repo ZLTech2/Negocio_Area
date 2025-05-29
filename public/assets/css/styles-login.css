@@ -1,0 +1,264 @@
+:root{
+   --cor-hover: rgb(255, 246, 0);
+   --transition-hover: 0.4s ease;
+   --cor-roxa: rgb(120, 0, 255);
+   --cor-amarela: rgb(255, 246, 0);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* background-color: rgb(194, 194, 194); */
+    background-image: url(../images/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+ }
+
+ header{
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(255, 255, 255);
+ }
+
+ .nav-list{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+   margin-bottom: 60px;
+}
+
+.menu{
+  display: flex;
+}
+
+.menu li{
+   margin: 25px;
+   list-style-type: none;
+   padding: 20px;
+   text-transform: uppercase;
+}
+
+.menu li a{
+   text-decoration: none;
+   color: inherit;
+   font-size: 20px;
+}
+
+.menu li a:hover{
+   color: var(--cor-amarela);
+   transition: 0.4s ease;
+}
+
+ .logo img{
+   width: 50px;
+   height: 50px;
+}
+
+.hamburguer{
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+  .logo img{
+    width: 50px;
+    height: 50px;
+ }
+
+ .container-form{
+    /* border: solid red 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+ }
+
+ .container-form h1{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    margin-top: 10%;
+    text-transform: uppercase;
+ }
+
+ .container-form form{
+    /* border: solid blue 1px; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(120, 0, 255);
+    border-radius: 10%;
+    margin-bottom: 10%;
+    height: 80vh;
+ }
+
+ .container-form form input:focus {
+   outline: 2px solid var(--cor-amarela);
+   box-shadow: 0 0 5px var(--cor-amarela); 
+}
+
+ .container-form form label, button{
+    text-transform: uppercase;
+ }
+
+ .container-form label{
+    color: rgb(255, 246, 0);
+    /* border: solid red 1px;  */
+    width:50%; 
+    margin-top: 20px;
+ }
+
+.container-form label, button{
+    font-size: 20px;
+}
+
+.container-form form input, button{
+    box-shadow: 3px 2px 5px 1px;
+    margin-top: 20px;
+    
+}
+
+ .container-form form input{
+    border-radius: 10px;
+    border: none;
+    width: 50%;
+    display: flex;
+    height: 3.5rem;
+    padding-left: 20px;
+ }
+
+ .container-form form input::placeholder{
+   text-transform: uppercase;
+ }
+
+.container-form form button{
+    border: solid 1px;
+    /* max-width: 70%; */
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(255, 246, 0);
+    font-weight: bold;
+    margin-top:50px;
+    border-radius: 10px;
+    height: 3.5rem;
+    margin-bottom: 10%;
+   
+}
+
+.container-form form button:hover{
+    background-color: rgb(120, 0, 255);
+    transition: 0.4s ease;
+}
+
+.container-form p{
+   font-size: 15px;
+   margin-bottom: 20px;
+}
+.container-form p a{
+   color: rgb(255,255,255);
+   text-decoration: none;
+}
+
+.container-form p a:hover{
+   color: var(--cor-hover);
+   transition: var(--transition-hover);
+}
+
+.redes-sociais{
+   margin: 20px;
+}
+
+.redes-sociais i{
+   margin: 20px;
+   font-size: 40px;
+   color: black;
+}
+
+.redes-sociais i:hover{
+   color: var(--cor-hover);
+   transition: var(--transition-hover);
+}
+
+.hamburguer{
+   display: none;
+   flex-direction: column;
+   cursor: pointer;
+ }
+
+ @media screen and (max-width:768px) {
+   .hamburguer{
+      display: flex;
+      cursor: pointer;
+      flex-direction: column;
+      gap: 5px;
+      
+   }
+
+   .hamburguer .bar{
+      width: 40px;
+      height: 6px;
+      background: white;
+      margin:4px 0;
+      border-radius: 30px;
+   }
+   .menu{
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 75px;
+      right: 0;
+      background-color: rgb(135 81 196);
+      width: 100%;
+      padding: 20px;
+      gap: 15px;
+      border-radius: 5px;
+   }
+
+   .menu.show{
+      display: flex;
+      align-items: center;
+      width: 20%;
+      z-index: 1000;
+      /* transition: 0.3s; */
+   }
+
+   .nav-list{
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+   }
+   .menu li{
+      margin: 0;
+   }
+
+   #sobre a{
+      width: 30%;
+   }
+
+   .container-form form{
+      width: 70%;
+   }
+
+   .container-form form input{
+      width: 50%;
+   }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/styles-cadastro.css">
+    <link rel="shortcut icon" href="../images/logo rd (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<style>
+    .input-icon{
+        display: flex;
+        border-radius: 10px;
+        width: 100%;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .input-icon input{
+        padding: 10px 40px 10px 10px;
+    }
+
+    .input-icon i{
+        position: relative;
+        left: 40%;
+        top: 50%;
+    }
+
+    .input-icon .icone{
+        position: absolute;
+        top: 90%;
+        left: 56%;
+        transform: translateY(30%);
+      color: #888;
+      cursor: pointer;
+    }
+</style>
+<body>
+    <main>
+        <div class="container-form">
+            <h1>Negócio na Área</h1>
+            <form method="post" id="form">
+                <label for="cnpj">cnpj </label>
+                    <input type="text" name="cnpj" id="cnpj" maxlength="18" placeholder="Digite o cnpj sem pontos" required>
+                
+                <label for="nome_empresa">Nome</label>
+                    <input type="text" name="nome_empresa" id="nome" placeholder="Digite o nome da empresa" required>
+               
+                <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite o email da empresa" required>
+            
+                <label for="telefone">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Digite o número de telefone"  maxlength="15" required>
+
+                <label for="descricao">Descrição</label>
+                    <input type="text" name="descricao" id="descricao" placeholder="Informe a descrição da empresa" required>
+
+                <label for="senha">senha</label>
+                <div class="input-icon">
+                    <div class="icone">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <input type="password" name="senha" id="senha" placeholder="Informe sua senha" required>
+                </div>   
+
+                <label for="confirmar_senha">Confirmação de senha:</label>
+                <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Confirme sua senha" required>
+                
+                <button type="submit">Cadastre-se</button>
+                <a href="./login.php">Entrar</a>
+                <a href="./tipo_cadastro.php">Voltar</a>    
+                <div class="msg" id="msg"></div>
+        </div>
+
+        <!-- <footer>
+            <p>redes sociais</p>
+        </footer> -->
+    </main>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/menu.js"></script>
+    
+</body>
+</html>

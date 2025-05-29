@@ -1,0 +1,11 @@
+{
+    "name": "user/meudeus",
+    "autoload": {
+        "psr-4": {
+            "src\\":"src/",
+            "routes\\":"routes/",
+            "config\\":"config/"
+        }
+    },
+    "require": {}
+}
