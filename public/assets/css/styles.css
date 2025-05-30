@@ -122,7 +122,7 @@ html{
    border: none;
    background-color: var(--cor-roxa);
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   border-radius: 20px;
+   border-radius: 10px;
    width: 15%;
    margin-top: 30px;
    margin-bottom: 10%;
