@@ -8,35 +8,29 @@
     <link rel="shortcut icon" href="../images/logo rd (1).png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
-<style>
-    .input-icon{
-        display: flex;
-        border-radius: 10px;
-        width: 100%;
-        justify-content: center;
-        align-items: baseline;
-    }
-
-    .input-icon input{
-        padding: 10px 40px 10px 10px;
-    }
-
-    .input-icon i{
-        position: relative;
-        left: 40%;
-        top: 50%;
-    }
-
-    .input-icon .icone{
-        position: absolute;
-        top: 90%;
-        left: 56%;
-        transform: translateY(30%);
-      color: #888;
-      cursor: pointer;
-    }
-</style>
 <body>
+    <header>
+        <nav>
+          <div class="nav-list">
+                <div class="logo">
+                    <a href="../../index.html"><img src="../images/logo rd (1).png" alt=""></a>
+                </div>
+
+                <div class="hamburguer" id="hamburguer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+                <ul class="menu" id="menu">
+                  <!-- <li><a href="../html/personalize.php">Personalize</a></li> -->
+                  <!-- <li><a href="#myCarousel">Sobre</a></li> -->
+                  <li><a href="http://zltech.freesite.online/?i=1"target="_blank">ZL Tech</a></li>
+                  <li> <a href="./tipo_cadastro.php">Cadastrar</a></li>
+                  <li><a href="./login.php">Entrar</a></li>
+              </ul>
+            </div>
+        </nav>
+    </header>
     <main>
         <div class="container-form">
             <h1>Negócio na Área</h1>
@@ -57,13 +51,7 @@
                     <input type="text" name="descricao" id="descricao" placeholder="Informe a descrição da empresa" required>
 
                 <label for="senha">senha</label>
-                <div class="input-icon">
-                    <div class="icone">
-                        <i class="fa-solid fa-eye"></i>
-                    </div>
                     <input type="password" name="senha" id="senha" placeholder="Informe sua senha" required>
-                </div>   
-
                 <label for="confirmar_senha">Confirmação de senha:</label>
                 <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Confirme sua senha" required>
                 

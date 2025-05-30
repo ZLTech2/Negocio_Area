@@ -19,7 +19,7 @@
                 <h2>Escolha o tipo de cadastro</h2>
                 <a href="./cadastro_cliente.php">Sou um cliente</a>
                 <p>Confira os posts e interaja</p>
-                <a href="./cadastro.html">Sou uma empresa</a>
+                <a href="./cadastro_empresa.html">Sou uma empresa</a>
                 <p>Crie os posts para sua empresa</p>
                 <div class="msg" id="msg"></div>
         </div>

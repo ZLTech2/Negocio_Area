@@ -262,3 +262,23 @@ html{
       width: 50%;
    }
 }
+
+/* celular modo retrato */
+@media screen and (max-width:480px) {
+   .menu.show {
+      width: 34%;
+      box-shadow: -5px 8px 11px 1px #a78bc7;
+      animation: abrirMenu 0.4s ease;
+   }
+
+   @keyframes abrirMenu {
+      0% {
+         transform: translateX(100%);
+      }
+
+      100% {
+         transform: translateX(0);
+      }
+
+   }
+}

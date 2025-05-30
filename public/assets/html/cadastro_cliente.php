@@ -8,9 +8,32 @@
     <link rel="shortcut icon" href="../images/logo rd (1).png" type="image/x-icon">
 </head>
 <body>
+    <header>
+        <nav>
+          <div class="nav-list">
+                <div class="logo">
+                    <a href="../../index.html"><img src="../images/logo rd (1).png" alt=""></a>
+                </div>
+
+                <div class="hamburguer" id="hamburguer">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+                <ul class="menu" id="menu">
+                  <!-- <li><a href="../html/personalize.php">Personalize</a></li> -->
+                  <!-- <li><a href="#myCarousel">Sobre</a></li> -->
+                  <li><a href="http://zltech.freesite.online/?i=1"target="_blank">ZL Tech</a></li>
+                  <li> <a href="./tipo_cadastro.php">Cadastrar</a></li>
+                  <li><a href="./login.php">Entrar</a></li>
+              </ul>
+            </div>
+        </nav>
+    </header>
     <main>
         <div class="container-form">
             <h1>Negócio na Área</h1>
+            <h2 style="color:white">cadastrar cliente</h2>
             <form method="post" id="form">
                 
                 <label for="nome_empresa">Nome</label>
