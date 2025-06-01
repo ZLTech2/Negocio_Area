@@ -9,6 +9,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   font-family: "Anton", sans-serif;
+    
     
 }
 
@@ -17,7 +19,7 @@ html{
 }
 
  body{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
     /* background-color: rgb(194, 194, 194); */
     background-image: url(../images/fundo.jpg);
     background-size: cover;
@@ -111,6 +113,7 @@ html{
  .container-form form input:focus {
    outline: 2px solid var(--cor-amarela);
    box-shadow: 0 0 5px var(--cor-amarela); 
+   
 }
 
  .container-form form label, button{
@@ -121,7 +124,8 @@ html{
     color: rgb(255, 246, 0);
     /* border: solid red 1px;  */
     width:50%; 
-    margin-top: 20px;
+    margin-top: 20px; 
+    /* a primeira label esta imovel */
  }
 
 .container-form label, button{
@@ -129,18 +133,17 @@ html{
 }
 
 .container-form form input, button{
-    box-shadow: 3px 2px 5px 1px;
-    margin-top: 20px;
+   box-shadow: 1px 3px 5px 1px #551a8b;
+   margin-top: 20px;
     
 }
 
  .container-form form input{
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     width: 50%;
     display: flex;
-    height: 3.5rem;
-    padding-left: 20px;
+    padding: 10px;
  }
 
  .container-form form input::placeholder{
@@ -150,28 +153,31 @@ html{
 .container-form form button{
     border: solid 1px;
     /* max-width: 70%; */
-    width: 35%;
+    width: 40%;   
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     background-color: rgb(255, 246, 0);
     font-weight: bold;
-    margin-top:50px;
+    margin-top:35px;
     border-radius: 10px;
     height: 3.5rem;
     margin-bottom: 10%;
+    color: #551a8b;
+    padding: 5px;
    
 }
 
 .container-form form button:hover{
-    background-color: rgb(120, 0, 255);
+    background-color: rgb(253, 252, 177);
     transition: 0.4s ease;
 }
 
 .container-form p{
    font-size: 15px;
-   margin-bottom: 20px;
+   margin-bottom: 15px;
+   color: #1b0431;
 }
 .container-form p a{
    color: rgb(255,255,255);
@@ -190,7 +196,7 @@ html{
 .redes-sociais i{
    margin: 20px;
    font-size: 40px;
-   color: black;
+   color: rgb(255, 255, 255);
 }
 
 .redes-sociais i:hover{
@@ -204,6 +210,7 @@ html{
    cursor: pointer;
  }
 
+ /* tablet */
  @media screen and (max-width:768px) {
    .hamburguer{
       display: flex;

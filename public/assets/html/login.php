@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="../css/styles-login.css">
     <link rel="shortcut icon" href="../images/logo rd (1).png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
 </head>
 <body>
     <?php
@@ -42,7 +46,7 @@
                 <button type="submit">Entrar</button>
 
                 <p><a href="#">Esqueci a senha</a></p>
-                <p>Não possui conta? <a href="../html/tipo_cadastro.html">Cadastre-se</a></p>
+                <p>Não possui conta? <a href="../html/tipo_cadastro.php">Cadastre-se</a></p>
 
                 <div class="redes-sociais">
                     <span><a href="#"><i class="fa-brands fa-google"></i></a></span>

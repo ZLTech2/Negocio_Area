@@ -47,6 +47,7 @@ html{
 
 .menu{
   display: flex;
+  
 }
 
 .menu li{
@@ -126,7 +127,6 @@ html{
  }
  .container-form label{
     color: rgb(255, 246, 0);
-    /* border: solid red 1px;  */
     width: 40%; 
 
  }
@@ -161,9 +161,7 @@ html{
     height: 3.5rem;
  }
 .container-form form a{
-   /* border: solid red 1px; */
    font-size: 20px;
-  
    text-decoration: none;
    text-transform: uppercase;
    background-color: var(--cor-amarela);
@@ -182,32 +180,11 @@ html{
 }
 
 .container-form a:hover{
-   background-color: rgb(253, 252, 177);
    transition: var(--transition-hover);
+   background-color: rgb(253, 252, 177);
+
 }
 
- 
-.container-form form button{
-    border: solid 1px;
-    /* max-width: 70%; */
-    width: 35%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    background-color: rgb(255, 246, 0);
-    font-weight: bold;
-    margin-top:70px;
-    border-radius: 10px;
-    height: 3.5rem;
-    margin-bottom: 5%;
-   
-}
-
-.container-form form button:hover{
-    background-color: rgb(77, 5, 160);
-    transition: 0.4s ease-in;
-}
 
 .hamburguer{
    display: none;
@@ -215,6 +192,7 @@ html{
    cursor: pointer;
  }
 
+ /* tablet */
  @media screen and (max-width:768px) {
    .hamburguer{
       display: flex;
@@ -237,7 +215,7 @@ html{
       position: absolute;
       top: 75px;
       right: 0;
-      background-color: rgb(135 81 196);
+      background-color: rgb(135 81 196 / 86%);
       width: 100%;
       padding: 20px;
       gap: 15px;
@@ -249,6 +227,8 @@ html{
       align-items: center;
       width: 20%;
       z-index: 1000;
+      box-shadow: -5px 8px 11px 1px #a78bc79c;
+      background-color: rgb(135 81 196 / 84%);
       /* transition: 0.3s; */
    }
 
@@ -274,6 +254,8 @@ html{
    }
 }
 
+
+
 /* celular modo retrato */
 @media screen and (max-width:480px) {
    .menu.show {
@@ -293,8 +275,8 @@ html{
 
    }
 
-   .menu{
-      background-color: blanchedalmond;
+   .menu.show{
+      background-color: rgb(135 81 196 / 84%);
    }
 
    .container-form{
@@ -309,5 +291,7 @@ html{
    .container-form h2{
       font-size: 29px;
    }
+
+   
   
 }

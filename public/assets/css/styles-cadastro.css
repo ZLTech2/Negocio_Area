@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Anton", sans-serif;
     
 }
 
@@ -15,7 +16,7 @@ html{
 }
 
  body{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   
     /* background-color: rgb(194, 194, 194); */
     background-image: url(../images/fundo.jpg);
     background-size: cover;
@@ -118,7 +119,7 @@ html{
  .container-form label{
     color: rgb(255, 246, 0);
     /* border: solid red 1px;  */
-    width: 40%; 
+    width: 72%; 
 
  }
 
@@ -128,7 +129,7 @@ html{
 }
 
 .container-form form input, .container-form form button{
-    box-shadow: 3px 2px 5px 1px;
+   box-shadow: 1px 3px 5px 1px #551a8b;
 }
 
 .container-form form input:focus {
@@ -147,7 +148,7 @@ html{
  .container-form form input{
     border-radius: 10px;
     border: none;
-    width: 45%;
+    width: 78%;
     display: flex;
     height: 3.5rem;
  }
@@ -163,6 +164,7 @@ html{
 .container-form a:hover{
    color: var(--cor-amarela);
    transition: 0.4s ease;
+  
 }
 
  
@@ -176,16 +178,18 @@ html{
     cursor: pointer;
     background-color: rgb(255, 246, 0);
     font-weight: bold;
-    margin-top:70px;
+    margin-top:52px;
     border-radius: 10px;
     height: 3.5rem;
     margin-bottom: 5%;
+   color: #551a8b;
+
    
 }
 
 .container-form form button:hover{
-    background-color: rgb(77, 5, 160);
-    transition: 0.4s ease-in;
+   background-color: rgb(224, 223, 118);
+    transition: 0.4s ease-in;                                                                         
 }
 
 .hamburguer{
@@ -262,6 +266,7 @@ html{
       width: 34%;
       box-shadow: -5px 8px 11px 1px #a78bc7;
       animation: abrirMenu 0.4s ease;
+      background-color: rgb(135 81 196 / 84%);
    }
 
    @keyframes abrirMenu {
@@ -274,4 +279,22 @@ html{
       }
 
    }
+
+   .container-form form input {
+      width: 82%;
+      box-shadow: 1px 3px 5px 1px #551a8b;
+   }
+
+   .container-form label{
+      width: 75%;
+   }
+
+   .container-form form button{
+      width: 56%;
+      color: #551a8b;
+      font-weight: bold;
+
+      
+   }
+
 }
