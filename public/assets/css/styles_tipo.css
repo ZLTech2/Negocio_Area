@@ -176,8 +176,7 @@ html{
     border-radius: 10px;
     height: 3.5rem;
     margin-bottom: 10px;
-    box-shadow: 3px 2px 5px 1px;
-     outline: none;
+    box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.2); 
 }
 
 .container-form form a:hover{
@@ -185,11 +184,13 @@ html{
    background-color: rgb(253, 252, 177);
 
 }
-
+.container-form form a:focus,
 .container-form form a:active {
-    background-color: rgb(253, 252, 177); /* mesmo do hover */
-    box-shadow: 3px 2px 5px 1px; /* reforça sombra igual */
-    border: solid 1px;
+    outline: none;
+    border: none;
+    /* box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.2);  */
+    background-color: rgb(253, 252, 177);
+    color: #551A8B;
 }
 
 
