@@ -177,12 +177,19 @@ html{
     height: 3.5rem;
     margin-bottom: 10px;
     box-shadow: 3px 2px 5px 1px;
+     outline: none;
 }
 
-.container-form a:hover{
+.container-form form a:hover{
    transition: var(--transition-hover);
    background-color: rgb(253, 252, 177);
 
+}
+
+.container-form form a:active {
+    background-color: rgb(253, 252, 177); /* mesmo do hover */
+    box-shadow: 3px 2px 5px 1px; /* reforça sombra igual */
+    border: solid 1px;
 }
 
 
