@@ -276,6 +276,7 @@ html{
       width: 34%;
       box-shadow: -5px 8px 11px 1px #a78bc7;
       animation: abrirMenu 0.4s ease;
+      background-color: rgb(135 81 196 / 84%);
    }
 
    @keyframes abrirMenu {
@@ -287,5 +288,13 @@ html{
          transform: translateX(0);
       }
 
+   }
+
+   .container-form form input{
+      width: 78%;
+   }
+
+   .container-form form label{
+      width: 72%;
    }
 }
