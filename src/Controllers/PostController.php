@@ -18,7 +18,7 @@
             if($foto && $foto['error'] ===0){
                 $extensao = pathinfo($foto['name'], PATHINFO_EXTENSION);
                 $nomeArquivo = time() . '_' . basename($foto['name']);
-                $upload = __DIR__ . '/../../public/assets/uploads';
+                $upload = __DIR__ . '/../../public/assets/uploads/';
                 $uploadFile = $upload . $nomeArquivo;
 
                 if(move_uploaded_file($foto['tmp_name'], $uploadFile)){

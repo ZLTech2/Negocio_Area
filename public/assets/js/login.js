@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     const loginSenha = document.getElementById('login_senha').value;
     const msg = document.getElementById('login_msg');
    
-    fetch('http://localhost/negocio_mvc/public/api/index.php/api/login', {
+    fetch('http://localhost/negocio_na_area/public/api/index.php/api/login', {
         method: 'POST',
         headers:{
             'Content-Type': 'application/json'
@@ -21,7 +21,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
         if (data.status === 'success') {
             
             localStorage.setItem('user', JSON.stringify(data.user));
-            window.location.href = "/negocio_mvc/public/assets/html/dashboard.php";
+            window.location.href = "/negocio_na_area/public/assets/html/dashboard.php";
         }else{
             msg.innerText ='Email ou senha inválidos'
         }
