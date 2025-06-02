@@ -45,7 +45,7 @@ form.addEventListener('submit', function(e){
         data[key] = value;
     });
 
-    fetch('http://localhost/negocio_na_area/public/api/index.php/api/empresa', {
+    fetch('http://localhost/negocio_area/public/api/index.php/api/empresa', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
