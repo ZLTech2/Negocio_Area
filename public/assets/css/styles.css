@@ -331,7 +331,6 @@ h2 {
       width: 300px;
       height: 300px;
    }
-
    .carousel-inner img{
       position: relative;
       bottom: 10px;
@@ -340,6 +339,7 @@ h2 {
 
    .carousel-inner{
      display: flex;
+     height: 65vh;
    }
 
    .carousel-inner p{
@@ -351,6 +351,7 @@ h2 {
    .carousel-inner p a{
       width: 100%;
    }
+
 
    /* .menu.fechar {
     animation: fecharMenu 0.4s ease forwards;
