@@ -21,7 +21,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
         if (data.status === 'success') {
             
             localStorage.setItem('user', JSON.stringify(data.user));
-            window.location.href = "/negocio_area/public/assets/html/dashboard.php";
+            window.location.href = "/negocio_area/public/assets/html/dashboard_empresa.php";
         }else{
             msg.innerText ='Email ou senha inválidos'
         }
