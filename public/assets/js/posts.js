@@ -1,5 +1,5 @@
 const formPost = document.getElementById('formPost');
-const url = "http://localhost/negocio_na_area/public/api/index.php/api/post";
+const url = "http://localhost/negocio_area/public/api/index.php/api/post";
 const msg = document.getElementById('msg')
 formPost.addEventListener('submit',function(e){
     e.preventDefault();
