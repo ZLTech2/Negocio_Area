@@ -125,6 +125,9 @@ h2 {
    transform: scale(0.9);
    transition: 0.4s ease;
 }
+.carousel-inner img{
+   width: 700px;
+}
 
 .rodape {
    display: flex;
@@ -298,6 +301,7 @@ h2 {
       width: 34%;
       box-shadow: -5px 8px 11px 1px #a78bc7;
       animation: abrirMenu 0.4s ease;
+      height: 60.5vh;
    }
 
    @keyframes abrirMenu {
@@ -328,6 +332,25 @@ h2 {
       height: 300px;
    }
 
+   .carousel-inner img{
+      position: relative;
+      bottom: 10px;
+      width: 100%;
+   }
+
+   .carousel-inner{
+     display: flex;
+   }
+
+   .carousel-inner p{
+      text-align: center;
+      max-width: 30%;
+      margin: 0 auto;
+   }
+
+   .carousel-inner p a{
+      width: 100%;
+   }
 
    /* .menu.fechar {
     animation: fecharMenu 0.4s ease forwards;
