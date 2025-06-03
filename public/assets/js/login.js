@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     const loginSenha = document.getElementById('login_senha').value;
     const msg = document.getElementById('login_msg');
    
-    fetch('http://localhost/negocio_area/public/api/index.php/api/login', {
+    fetch('http://localhost/negocio_na_area/public/api/index.php/api/login', {
         method: 'POST',
         headers:{
             'Content-Type': 'application/json'
