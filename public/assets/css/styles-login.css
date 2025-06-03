@@ -220,6 +220,24 @@ html{
       
    }
 
+   .menu.show {
+      width: 34%;
+      box-shadow: -5px 8px 11px 1px #a78bc7;
+      animation: abrirMenu 0.4s ease;
+      background-color: rgb(135 81 196 / 84%);
+   }
+
+   @keyframes abrirMenu {
+      0% {
+         transform: translateX(100%);
+      }
+
+      100% {
+         transform: translateX(0);
+      }
+
+   }
+
    .hamburguer .bar{
       width: 40px;
       height: 6px;
@@ -262,12 +280,18 @@ html{
    }
 
    .container-form form{
-      width: 70%;
+      width: 65%;
+   }
+   
+   .container-form form input {
+      width: 67%;
    }
 
-   .container-form form input{
-      width: 50%;
+
+   .container-form label{
+      width: 63%;
    }
+
 }
 
 /* celular modo retrato */

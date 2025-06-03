@@ -232,10 +232,13 @@ h2 {
    .menu.show {
       display: flex;
       align-items: center;
-      width: 20%;
+      width: 23%;
       z-index: 1000;
       /* transition: 0.3s; */
       animation: abrirMenu 0.4s ease;
+      box-shadow: -5px 8px 11px 1px #a78bc7;
+      height: 66.5vh;
+      justify-content: center;
    }
 
    .nav-list {
@@ -251,6 +254,18 @@ h2 {
    #sobre a {
       width: 30%;
    }
+   
+   @keyframes abrirMenu {
+      0% {
+         transform: translateX(100%);
+      }
+
+      100% {
+         transform: translateX(0);
+      }
+
+   }
+
 }
 
 /* celular modo retrato */
