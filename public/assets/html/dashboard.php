@@ -45,7 +45,7 @@
                     </div>
                     <div class="imagem"><a href="#"><i class="fa-regular fa-images"></a></i></div>
                     <div class="botoes">
-                        <button id="salvarModificacao">Salvar</buttonid>
+                        <button id="salvarModificacao">Salvar</button>
                         <button id="cancelarModificacao">Cancelar</button>
                     </div>
                 </div>
@@ -104,8 +104,8 @@
             <!-- <img src="../assets/images/mkimports.png" alt=""> -->
         </div>
         <div class="titulo-loja">
-            <h1 id="title-loja"></h1>
-            <p id="desc-loja"></p>
+            <h1 id="title-loja">fasdfsdfsfsfs</h1>
+            <p id="desc-loja">sfasfsfsfsfsfsfsfsd</p>
         </div>
     </div>
     <div class="teste">
