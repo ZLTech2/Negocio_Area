@@ -12,13 +12,13 @@
             $input = file_get_contents("php://input");
             $data = json_decode($input);
 
-            $nome = $data->nome ?? null;
+            $nomeCliente = $data->nomeCliente ?? null;
             $email = $data->email ?? null;
             $telefone = $data->telefone ?? null;
             $senha = $data->senha ?? null;
 
-            if($nome && $email && $telefone && $senha){
-                $this->service->criar($nome, $email, $telefone, $senha);
+            if($nomeCliente && $email && $telefone && $senha){
+                $this->service->criar($nomeCliente, $email, $telefone, $senha);
                 $response = ["status"=>"success","msg"=>"Conta cadastrada, clique no botão entrar para logar"];
             }else{
                 $response = ["status"=>"error","msg"=>"Dados incompletos"];

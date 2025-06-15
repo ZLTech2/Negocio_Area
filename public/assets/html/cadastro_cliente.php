@@ -40,8 +40,8 @@
             <h2 style="color:white">cadastrar cliente</h2>
             <form id="formCliente">
                 
-                <label for="nome_empresa">Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite o seu nome" required>
+                <label for="nomeCliente">Nome</label>
+                    <input type="text" name="nome" id="nomeCliente" placeholder="Digite o seu nome" required>
                
                 <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Digite o seu email" required>

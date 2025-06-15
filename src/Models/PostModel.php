@@ -2,16 +2,16 @@
     namespace src\Models;
 
     class PostModel{
-        private $nome_produto;
-        private $descricao_produto;
+        private $nomeProduto;
+        private $descricaoProduto;
         private $preco;
         private $telefone;
         private $imagem;
         private $cnpj;
 
-        public function __construct($nome_produto, $descricao_produto, $preco,$imagem, $telefone, $cnpj){
-            $this->nome_produto = $nome_produto;
-            $this->descricao_produto = $descricao_produto;
+        public function __construct($nomeProduto, $descricaoProduto, $preco,$imagem, $telefone, $cnpj){
+            $this->nomeProduto = $nomeProduto;
+            $this->descricaoProduto = $descricaoProduto;
             $this->preco = $preco;
             $this->imagem = $imagem;
             $this->telefone = $telefone;
@@ -19,11 +19,11 @@
         }
 
         public function getNome_produto(){
-            return $this->nome_produto;
+            return $this->nomeProduto;
         }
 
         public function getDescricao_produto(){
-            return $this->descricao_produto;
+            return $this->descricaoProduto;
         }
 
         public function getPreco(){

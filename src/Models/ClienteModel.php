@@ -2,21 +2,21 @@
     namespace src\Models;
     
     class ClienteModel{
-        private $nome;
+        private $nomeCliente;
         private $email;
         private $telefone;
         private $senha;
 
-        public function __construct($nome, $email, $telefone, $senha)
+        public function __construct($nomeCliente, $email, $telefone, $senha)
         {
-            $this->nome = $nome;
+            $this->nomeCliente = $nomeCliente;
             $this->email = $email;
             $this->telefone = $telefone;
             $this->senha = $senha;
         }
 
         public function getNome(){
-            return $this->nome;
+            return $this->nomeCliente;
         }
 
         public function getEmail(){

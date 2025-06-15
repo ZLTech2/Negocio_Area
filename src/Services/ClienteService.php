@@ -11,9 +11,9 @@
             $this->dao = new ClienteDAO();
         }
 
-        public function criar($nome, $email, $telefone, $senha){
+        public function criar($nomeCliente, $email, $telefone, $senha){
             $hash = password_hash($senha, PASSWORD_ARGON2ID);
-            $cliente = new ClienteModel($nome, $email, $telefone, $hash);
+            $cliente = new ClienteModel($nomeCliente, $email, $telefone, $hash);
             return $this->dao->save($cliente);
         }
     }
