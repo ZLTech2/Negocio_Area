@@ -12,12 +12,12 @@ class EmpresaDAO{
         $this->conn = $database->getConnection();
     }
     public function save(EmpresaModel $empresaModel){
-        $sql = "INSERT INTO empresa(cnpj, nome_empresa, email, descricao, telefone, senha) VALUES (:cnpj,  :nome_empresa, :email, :descricao, :telefone, :senha) ";
+        $sql = "INSERT INTO empresa(cnpj, nomeEmpresa, email, descricao, telefone, senha) VALUES (:cnpj,  :nomeEmpresa, :email, :descricao, :telefone, :senha) ";
         $stmt = $this->conn->prepare($sql);
 
         $stmt->execute([
             ':cnpj'=>$empresaModel->getCnpj(),
-            ':nome_empresa'=>$empresaModel->getNome(),
+            ':nomeEmpresa'=>$empresaModel->getNome(),
             ':email'=>$empresaModel->getEmail(),
             ':descricao'=>$empresaModel->getDescricao(),
             ':telefone'=>$empresaModel->getTelefone(),
@@ -41,10 +41,10 @@ class EmpresaDAO{
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function atualizarDados($nome_empresa, $descricao, $cnpj){
-        $sql = "UPDATE empresa SET descricao = :descricao, nome_empresa = :nome_empresa WHERE cnpj = :cnpj";
+    public function atualizarDados($nomeEmpresa, $descricao, $cnpj){
+        $sql = "UPDATE empresa SET descricao = :descricao, nomeEmpresa = :nomeEmpresa WHERE cnpj = :cnpj";
         $stmt = $this->conn->prepare($sql);
-        $stmt->bindParam(':nome_empresa',$nome_empresa, PDO::PARAM_STR);
+        $stmt->bindParam(':nomeEmpresa',$nomeEmpresa, PDO::PARAM_STR);
         $stmt->bindParam(':descricao',$descricao, PDO::PARAM_STR);
         $stmt->bindParam(':cnpj',$cnpj, PDO::PARAM_STR);
         $stmt->execute();

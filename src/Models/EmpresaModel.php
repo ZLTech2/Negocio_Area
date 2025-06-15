@@ -2,15 +2,15 @@
     namespace src\Models;
     class EmpresaModel{
         private $cnpj;
-        private $nome_empresa;
+        private $nomeEmpresa;
         private $email;
         private $descricao;
         private $telefone;
         private $senha;
 
-        public function __construct($cnpj, $nome_empresa,$email,$descricao, $telefone, $senha){
+        public function __construct($cnpj, $nomeEmpresa,$email,$descricao, $telefone, $senha){
             $this->cnpj = $cnpj;
-            $this->nome_empresa = $nome_empresa;
+            $this->nomeEmpresa = $nomeEmpresa;
             $this->email = $email;
             $this->descricao = $descricao;
             $this->telefone = $telefone;
@@ -21,7 +21,7 @@
             return $this->cnpj;
         }
         public function getNome(){
-            return $this->nome_empresa;
+            return $this->nomeEmpresa;
         }
 
         public function getEmail(){

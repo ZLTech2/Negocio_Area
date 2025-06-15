@@ -28,7 +28,7 @@ const descricao = document.getElementById('desc-loja');
 fetch('http://localhost/negocio_area/public/api/index.php/api/dados')
 .then(response => response.json())
 .then(data=>{
-    titulo.textContent = data.nome_empresa;
+    titulo.textContent = data.nomeEmpresa;
     descricao.textContent = data.descricao;
 })
  .catch(error => {

@@ -3,11 +3,11 @@ namespace src\Controllers;
 class DashboardController {
 
     public function dadosSessao() {
-        $nome_empresa = $_SESSION['nome_empresa'] ?? '';
+        $nomeEmpresa = $_SESSION['nomeEmpresa'] ?? '';
         $descricao = $_SESSION['descricao'] ?? '';
 
         $dados = [
-            'nome_empresa' => $nome_empresa,
+            'nomeEmpresa' => $nomeEmpresa,
             'descricao' => $descricao
         ];
 
