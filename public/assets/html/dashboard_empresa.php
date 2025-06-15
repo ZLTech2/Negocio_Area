@@ -100,6 +100,7 @@
         </nav>
     </header>
     <div class="capa">
+        
         <div class="imagem">
             <!-- <img src="../assets/images/mkimports.png" alt=""> -->
         </div>

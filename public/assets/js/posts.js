@@ -22,3 +22,15 @@ formPost.addEventListener('submit',function(e){
         msg.status === 'error'
     })
 })
+
+const titulo = document.getElementById('title-loja')
+const descricao = document.getElementById('desc-loja');
+fetch('http://localhost/negocio_area/public/api/index.php/api/dados')
+.then(response => response.json())
+.then(data=>{
+    titulo.textContent = data.nome_empresa;
+    descricao.textContent = data.descricao;
+})
+ .catch(error => {
+    console.error('Erro ao buscar dados:', error);
+  });
