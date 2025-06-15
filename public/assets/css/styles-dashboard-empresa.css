@@ -292,7 +292,6 @@ i{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: calc(100% - 200px);
   /* border: solid red 1px; */
   margin: 0 auto;
   margin-top: 10%;
@@ -304,4 +303,10 @@ i{
 
 .posts img{
   width: 200px;
+}
+
+.imagem-post{
+  border: solid red 1px;
+  width: 30%;
+  height: 40vh;
 }

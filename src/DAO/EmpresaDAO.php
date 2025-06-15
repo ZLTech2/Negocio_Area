@@ -41,6 +41,16 @@ class EmpresaDAO{
         return $stmt->fetch(PDO::FETCH_ASSOC);
     }
 
+    public function atualizarDados($nome_empresa, $descricao, $cnpj){
+        $sql = "UPDATE empresa SET descricao = :descricao, nome_empresa = :nome_empresa WHERE cnpj = :cnpj";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bindParam(':nome_empresa',$nome_empresa, PDO::PARAM_STR);
+        $stmt->bindParam(':descricao',$descricao, PDO::PARAM_STR);
+        $stmt->bindParam(':cnpj',$cnpj, PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->rowCount() > 0;
+    }
+
     //criar query para select
 }
 ?>

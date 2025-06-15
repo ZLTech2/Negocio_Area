@@ -105,8 +105,8 @@
             <!-- <img src="../assets/images/mkimports.png" alt=""> -->
         </div>
         <div class="titulo-loja">
-            <h1 id="title-loja">fasdfsdfsfsfs</h1>
-            <p id="desc-loja">sfasfsfsfsfsfsfsfsd</p>
+            <h1 id="title-loja"></h1>
+            <p id="desc-loja"></p>
         </div>
     </div>
     <div class="teste">
@@ -118,6 +118,7 @@
         <a href="#"><img src="../images/adicionar-botao.png" alt=""></a>
             <!-- <a href="https://www.flaticon.com/br/icones-gratis/adicionar" title="adicionar ícones">Adicionar ícones criados por Karacis - Flaticon</a> -->
         <h1>Adicionar posts</h1>
+        <div class="imagem-post"></div>
     </div>
 
     <script src="../js/popup.js"></script>

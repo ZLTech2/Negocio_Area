@@ -33,4 +33,7 @@ fetch('http://localhost/negocio_area/public/api/index.php/api/dados')
 })
  .catch(error => {
     console.error('Erro ao buscar dados:', error);
-  });
+});
+
+ const salvarDescritivo = document.getElementById('salvarDescritivo');
+ 
