@@ -7,7 +7,7 @@ body{
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 header{
-   background-color: rgb(194, 192, 192);
+   background-color: #ffffff;
    width: 200px;
    height: 100vh;
    position:fixed;
@@ -29,6 +29,7 @@ header{
    font-size: 20px;
    text-transform: uppercase;
    margin-bottom: 20px;
+   color: #7800ff;
 }
 .nav-list{
    display: flex;
@@ -138,7 +139,7 @@ header{
 }
 .nav-list li a{
    text-decoration: none;
-   color: black;
+   color: #7800ff;
 }
 
 .sair{
@@ -160,7 +161,7 @@ button{
    justify-content: center;
    /* border: solid red 1px; */
    height: 20vh;
-   background-color: rgb(65, 65, 65);
+   background-color: #983cff;
    box-shadow: 6px 3px 5px 2px;
 }
 
@@ -175,7 +176,7 @@ button{
 
 .capa{
  height: 20vh;
- background-color: rgb(116, 116, 116);
+ background-color: #7800ff;
  /* background-image: url(../assets/images/fundo_preto.avif); */
 }
 
@@ -268,7 +269,7 @@ i{
   width: 200px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-color: #a0a0a0;
+  background-color:#ffde59;;
   position: relative;
   left: 205px;
   top: 2px;
@@ -294,15 +295,18 @@ i{
   flex-direction: column;
   /* border: solid red 1px; */
   margin: 0 auto;
-  margin-top: 10%;
+  background-color:  #d9d4d6;
+
 }
 
 .posts h1{
   text-transform: uppercase;
+  
 }
 
 .posts img{
   width: 200px;
+  margin-top: 44%;
 }
 
 .imagem-post{
