@@ -289,7 +289,7 @@ i{
   letter-spacing: 5px;
 }
 
-.posts{
+.posts, .add-posts{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -300,12 +300,12 @@ i{
 
 }
 
-.posts h1{
+.add-posts h1{
   text-transform: uppercase;
   
 }
 
-.posts img{
+.add-posts img{
   width: 200px;
 }
 
@@ -324,7 +324,6 @@ i{
 .textos-post{
   margin: 0 auto;
   display: flex;
-  width: 25%;
   justify-content: center;
   border: solid blue 1px;
   margin-top: 10px;

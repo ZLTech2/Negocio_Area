@@ -114,18 +114,21 @@
         <span>Avaliações</span>
     </div>
 
-    <div class="posts" id="post">
+    <div class="add-posts" id="post">
         <a href="#"><img src="../images/adicionar-botao.png" alt=""></a>
-            <!-- <a href="https://www.flaticon.com/br/icones-gratis/adicionar" title="adicionar ícones">Adicionar ícones criados por Karacis - Flaticon</a> -->
         <h1>Adicionar posts</h1>
+    </div>
     
     <div class="imagem-post">
         <img src="../images/mk_imports.jpg" alt="">
-    </div>
-    <div class="textos-post">
+        <div class="textos-post">
         <span id="nomeProduto">Moletom Nike</span>
         <span id="precoProduto">99,99</span>
+        <img src="../images/fundo.jpg" alt="">
     </div>
+    
+    
+    
 </div>
 
     <script src="../js/popup.js"></script>
