@@ -5,6 +5,7 @@
 }
 body{
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   background-color: #d9d4d6;
 }
 header{
    background-color: #ffffff;
@@ -310,7 +311,35 @@ i{
 }
 
 .imagem-post{
+  margin:0 auto;
   border: solid red 1px;
   width: 30%;
   height: 40vh;
+}
+
+.imagem-post img{
+  width: 100%;
+  height: 100%;
+}
+
+.textos-post{
+  margin: 0 auto;
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  border: solid blue 1px;
+  margin-top: 10px;
+  box-sizing: border-box;
+   flex-wrap: wrap;
+}
+
+.textos-post span{
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  max-width: 100%;
+   word-break: break-word;
+  overflow-wrap: break-word;
 }
