@@ -309,12 +309,17 @@ i{
   width: 200px;
 }
 
-.imagem-post{
-  margin:0 auto;
-  border: solid red 1px;
-  width: 30%;
-  height: 40vh;
+.container{
+    margin: 0 auto;
+    border: solid red 1px;
+    width: 30%;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    margin-top: 20px;
+    align-items: center;
 }
+
 
 .imagem-post img{
   width: 100%;

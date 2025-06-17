@@ -119,16 +119,23 @@
         <h1>Adicionar posts</h1>
     </div>
     
+    <div class="container">
     <div class="imagem-post">
         <img src="../images/mk_imports.jpg" alt="">
         <div class="textos-post">
-        <span id="nomeProduto">Moletom Nike</span>
-        <span id="precoProduto">99,99</span>
-        <img src="../images/fundo.jpg" alt="">
+            <span id="nomeProduto">Moletom Nike</span>
+            <span id="precoProduto">99,99</span>
+        </div>
     </div>
-    
-    
-    
+</div>
+<div class="container">
+    <div class="imagem-post">
+        <img src="../images/mk_imports.jpg" alt="">
+        <div class="textos-post">
+            <span id="nomeProduto">Moletom Nike</span>
+            <span id="precoProduto">99,99</span>
+        </div>
+    </div>
 </div>
 
     <script src="../js/popup.js"></script>
