@@ -118,7 +118,7 @@
         <a href="#"><img src="../images/adicionar-botao.png" alt=""></a>
             <!-- <a href="https://www.flaticon.com/br/icones-gratis/adicionar" title="adicionar ícones">Adicionar ícones criados por Karacis - Flaticon</a> -->
         <h1>Adicionar posts</h1>
-    </div>
+    
     <div class="imagem-post">
         <img src="../images/mk_imports.jpg" alt="">
     </div>
@@ -126,6 +126,7 @@
         <span id="nomeProduto">Moletom Nike</span>
         <span id="precoProduto">99,99</span>
     </div>
+</div>
 
     <script src="../js/popup.js"></script>
     <script src="../js/posts.js"></script>
