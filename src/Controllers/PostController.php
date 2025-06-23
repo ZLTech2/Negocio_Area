@@ -40,11 +40,20 @@
 
             if($nomeProduto && $descricaoProduto && $preco){
                 $this->service->criar($nomeProduto, $descricaoProduto, $preco, $src, $telefone, $cnpj);
-                $response = ["status"=>"success", "msg"=>"Post cadastrado"];
+                $_SESSION['descricaoProduto'] = $descricaoProduto;
+                $_SESSION['preco'] = $preco;
+
+                $response = ["status"=>"success", "msg"=>"Post cadastrado", "descricaoProduto"=>$descricaoProduto, "preco"=>$preco, "imagem"=>$src];
             }else{
                 $response = ["status"=>"error", "msg"=>"Erro ao cadastrar post"];
             }
             echo json_encode($response);
+        }
+
+        public function mostrarPosts(){
+            header("Content-Type: application/json");
+            $posts = $this->service->listar();
+            echo json_encode($posts);
         }
     }
 ?>

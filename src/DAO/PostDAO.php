@@ -15,7 +15,7 @@
 
         public function save(PostModel $postModel){
             $sql = "INSERT INTO post (nomeProduto, descricaoProduto, preco, imagem, telefone, cnpj) 
-            VALUES (:nome_produto, :descricao_produto, :preco, :imagem, :telefone, :cnpj)";
+            VALUES (:nomeProduto, :descricaoProduto, :preco, :imagem, :telefone, :cnpj)";
 
             $stmt = $this->conn->prepare($sql);
 
@@ -31,7 +31,11 @@
 
         // listar todos os posts
         public function list(){
+            $sql = "SELECT descricaoProduto, preco, imagem FROM post ORDER BY idPost DESC LIMIT 1";
+            $stmt = $this->conn->prepare($sql);
 
+            $stmt->execute();
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
 
         // excluir posts

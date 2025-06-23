@@ -14,5 +14,9 @@
             $post = new PostModel($nomeProduto, $descricaoProduto, $preco, $imagem, $telefone, $cnpj);
             return $this->dao->save($post);
         }
+
+        public function listar(){
+            return $this->dao->list();
+        }
     }
 ?>

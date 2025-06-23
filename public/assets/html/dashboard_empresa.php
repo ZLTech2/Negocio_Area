@@ -57,10 +57,10 @@
                 <div class="conteudo">
                     <form enctype="multipart/form-data" id="formPost" method="POST">
                         <label for="name">Nome do produto</label>
-                        <input type="text" placeholder="Adicione o nome do produto" name="nome_produto">
+                        <input type="text" placeholder="Adicione o nome do produto" name="nomeProduto">
 
                         <label for="descricao">Descrição do produto</label>
-                        <input type="text" placeholder="Adicione uma descrição" name="descricao_produto">
+                        <input type="text" placeholder="Adicione uma descrição" name="descricaoProduto">
 
                         <label for="preco">Preço do produto</label>
                         <input type="number" placeholder="Adicione o preço" name="preco">
@@ -120,11 +120,11 @@
     </div>
     
     <div class="imagem-post">
-        <img src="../images/mk_imports.jpg" alt="">
+        <img src="" alt="" id="imagemProduto">
         <div class="textos-post">
-        <span id="nomeProduto">Moletom Nike</span>
-        <span id="precoProduto">99,99</span>
-        <img src="../images/fundo.jpg" alt="">
+        <span id="descProduto"></span>
+        <span id="precProduto"></span>
+        <!-- <img src="../images/fundo.jpg" alt=""> -->
     </div>
     
     

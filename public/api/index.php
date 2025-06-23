@@ -20,5 +20,7 @@
 
     $router->add('GET','/index.php/api/dados',[new DashboardController(),'dadosSessao']);
 
+    $router->add('GET','/index.php/api/mostrarPosts',[new PostController(),'mostrarPosts']);
+
     $router->handleRequest();
 ?>
