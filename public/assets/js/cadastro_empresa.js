@@ -30,6 +30,7 @@ function verificarSenhas() {
 senha.addEventListener('input',verificarSenhas);
 confirmarSenha.addEventListener('input',verificarSenhas);
 
+//verificando as senhas
 form.addEventListener('submit', function(e){
     if(!verificarSenhas()){
         e.preventDefault();
