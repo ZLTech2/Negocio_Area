@@ -12,19 +12,26 @@
 </head>
 <body>
     <?php
-        include('header.html');
+        // include('header.html');
     ?>
 
     <main>
+        <div class="container">
+        <div class="logo">
+            <img src="../images/logo rd (1).png" alt="">
+        </div>
         <div class="container-form">
-            <h1>Negócio na Área</h1>
             <form method="post" id="form">
                 <h2>Escolha o tipo de cadastro</h2>
+                <div class="botoes">
                 <a href="./cadastro_cliente.php">Sou um cliente</a>
                 <p>Confira os posts e interaja</p>
                 <a href="./cadastro_empresa.html">Sou uma empresa</a>
                 <p>Crie os posts para sua empresa</p>
+                </div>
+                <p class="texto">O tipo de cadastro representa como você deseja ingressar na plataforma!</p>
                 <div class="msg" id="msg"></div>
+        </div>
         </div>
     </form>
         <!-- <footer>
