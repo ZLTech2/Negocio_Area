@@ -40,8 +40,6 @@
 
             if($nomeProduto && $descricaoProduto && $preco){
                 $this->service->criar($nomeProduto, $descricaoProduto, $preco, $src, $telefone, $cnpj);
-                $_SESSION['descricaoProduto'] = $descricaoProduto;
-                $_SESSION['preco'] = $preco;
 
                 $response = ["status"=>"success", "msg"=>"Post cadastrado", "descricaoProduto"=>$descricaoProduto, "preco"=>$preco, "imagem"=>$src];
             }else{
@@ -51,8 +49,13 @@
         }
 
         public function mostrarPosts(){
-            header("Content-Type: application/json");
-            $posts = $this->service->listar();
+            session_start();
+            $cnpj = $_SESSION['cnpj']??null;
+            if(!$cnpj){
+                echo json_encode(['status' => 'error', 'msg' => 'Não logado']);
+                return;
+            }
+            $posts = $this->service->listar($cnpj);
             echo json_encode($posts);
         }
     }

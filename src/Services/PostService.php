@@ -15,8 +15,8 @@
             return $this->dao->save($post);
         }
 
-        public function listar(){
-            return $this->dao->list();
-        }
+        public function listar($cnpj){
+            return $this->dao->list($cnpj);
+        }   
     }
 ?>

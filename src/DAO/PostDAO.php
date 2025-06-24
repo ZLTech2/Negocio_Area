@@ -30,11 +30,13 @@
         }
 
         // listar todos os posts
-        public function list(){
-            $sql = "SELECT descricaoProduto, preco, imagem FROM post ORDER BY idPost DESC LIMIT 1";
+        public function list($cnpj){
+            $sql = "SELECT descricaoProduto, preco, imagem FROM post WHERE cnpj = :cnpj ORDER BY idPost DESC";
             $stmt = $this->conn->prepare($sql);
 
-            $stmt->execute();
+            $stmt->execute([
+                ':cnpj'=> $cnpj
+            ]);
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
 
