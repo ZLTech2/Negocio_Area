@@ -94,6 +94,12 @@ document.addEventListener('DOMContentLoaded', () => {
         fecharTodosPopups();
     });
 
+    const fechar = document.getElementById('fechar');
+    fechar.addEventListener('click', function(event){
+        event.preventDefault();
+        fecharTodosPopups();
+    })
+
     function mascaraCNPJ(cnpj) {
     cnpj = cnpj.replace(/\D/g, '');
     cnpj = cnpj.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})$/, '$1.$2.$3/$4-$5');

@@ -276,7 +276,13 @@ i{
   top: 2px;
 }
 
+.fa-regular, .fa-circle-xmark{
+  color: #ff0000;position:relative;left:200px; cursor:pointer
+}
 
+.fa-regular, .fa-circle-xmark:hover{
+  color: red;
+}
 
 
 .titulo-loja{
