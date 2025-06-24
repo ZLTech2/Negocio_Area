@@ -14,14 +14,14 @@ class EmpresaController{
         $data = json_decode($input);
 
         $cnpj = $data->cnpj ?? null;
-        $nome_empresa = $data->nome_empresa ?? null;
+        $nomeEmpresa = $data->nomeEmpresa ?? null;
         $email = $data->email ?? null;
         $telefone = $data->telefone ?? null;
         $descricao = $data->descricao ?? null;
         $senha = $data->senha ?? null;
         
-        if ($cnpj && $nome_empresa && $email && $telefone && $descricao && $senha) {
-            $this->service->criar($cnpj, $nome_empresa, $email, $descricao, $telefone, $senha);
+        if ($cnpj && $nomeEmpresa && $email && $telefone && $descricao && $senha) {
+            $this->service->criar($cnpj, $nomeEmpresa, $email, $descricao, $telefone, $senha);
             $response = ["status" => "success", "msg" => "Conta cadastrada, clique no botão entrar para logar"];
         } else {
             $response = ["status" => "error", "msg" => "Dados incompletos!"];

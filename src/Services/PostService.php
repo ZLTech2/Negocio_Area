@@ -10,9 +10,13 @@
             $this->dao = new PostDAO();
         }
 
-        public function criar($nome_produto, $descricao_produto, $preco,$imagem, $telefone, $cnpj){
-            $post = new PostModel($nome_produto, $descricao_produto, $preco, $imagem, $telefone, $cnpj);
+        public function criar($nomeProduto, $descricaoProduto, $preco,$imagem, $telefone, $cnpj){
+            $post = new PostModel($nomeProduto, $descricaoProduto, $preco, $imagem, $telefone, $cnpj);
             return $this->dao->save($post);
         }
+
+        public function listar($cnpj){
+            return $this->dao->list($cnpj);
+        }   
     }
 ?>

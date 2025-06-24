@@ -14,14 +14,14 @@
         }
 
         public function save(PostModel $postModel){
-            $sql = "INSERT INTO post (nome_produto, descricao_produto, preco, imagem, telefone, cnpj) 
-            VALUES (:nome_produto, :descricao_produto, :preco, :imagem, :telefone, :cnpj)";
+            $sql = "INSERT INTO post (nomeProduto, descricaoProduto, preco, imagem, telefone, cnpj) 
+            VALUES (:nomeProduto, :descricaoProduto, :preco, :imagem, :telefone, :cnpj)";
 
             $stmt = $this->conn->prepare($sql);
 
             $stmt->execute([
-                ':nome_produto'=>$postModel->getNome_produto(),
-                ':descricao_produto'=>$postModel->getDescricao_produto(),
+                ':nomeProduto'=>$postModel->getNome_produto(),
+                ':descricaoProduto'=>$postModel->getDescricao_produto(),
                 ':preco'=>$postModel->getPreco(),
                 ':imagem'=>$postModel->getImagem(),
                 ':telefone'=>$postModel->getTelefone(),
@@ -30,8 +30,14 @@
         }
 
         // listar todos os posts
-        public function list(){
+        public function list($cnpj){
+            $sql = "SELECT descricaoProduto, preco, imagem FROM post WHERE cnpj = :cnpj ORDER BY idPost DESC";
+            $stmt = $this->conn->prepare($sql);
 
+            $stmt->execute([
+                ':cnpj'=> $cnpj
+            ]);
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
 
         // excluir posts

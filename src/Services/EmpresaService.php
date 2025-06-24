@@ -9,9 +9,9 @@ class EmpresaService{
         $this->dao = new EmpresaDAO();
     }
 
-    public function criar($cnpj, $nome_empresa, $email, $descricao, $telefone, $senha){
+    public function criar($cnpj, $nomeEmpresa, $email, $descricao, $telefone, $senha){
         $hash = password_hash($senha,PASSWORD_ARGON2ID);
-        $empresa = new EmpresaModel($cnpj, $nome_empresa, $email, $descricao, $telefone, $hash);
+        $empresa = new EmpresaModel($cnpj, $nomeEmpresa, $email, $descricao, $telefone, $hash);
         
         return $this->dao->save($empresa);
     }

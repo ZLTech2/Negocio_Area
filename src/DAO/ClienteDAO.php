@@ -14,12 +14,12 @@
         }
 
         public function save(ClienteModel $clienteModel){
-            $sql = "INSERT INTO cliente(nome, email, telefone, senha)
+            $sql = "INSERT INTO cliente(nomeCliente, email, telefone, senha)
                     VALUES (:nome, :email, :telefone, :senha) ";
             $stmt = $this->conn->prepare($sql);
             
             $stmt->execute([
-                ':nome'=>$clienteModel->getNome(),
+                ':nomeCliente'=>$clienteModel->getNome(),
                 ':email'=>$clienteModel->getEmail(),
                 ':telefone'=>$clienteModel->getTelefone(),
                 ':senha'=>$clienteModel->getSenha()

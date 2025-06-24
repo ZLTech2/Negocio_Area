@@ -12,12 +12,12 @@ class EmpresaDAO{
         $this->conn = $database->getConnection();
     }
     public function save(EmpresaModel $empresaModel){
-        $sql = "INSERT INTO empresa(cnpj, nome_empresa, email, descricao, telefone, senha) VALUES (:cnpj,  :nome_empresa, :email, :descricao, :telefone, :senha) ";
+        $sql = "INSERT INTO empresa(cnpj, nomeEmpresa, email, descricao, telefone, senha) VALUES (:cnpj,  :nomeEmpresa, :email, :descricao, :telefone, :senha) ";
         $stmt = $this->conn->prepare($sql);
 
         $stmt->execute([
             ':cnpj'=>$empresaModel->getCnpj(),
-            ':nome_empresa'=>$empresaModel->getNome(),
+            ':nomeEmpresa'=>$empresaModel->getNome(),
             ':email'=>$empresaModel->getEmail(),
             ':descricao'=>$empresaModel->getDescricao(),
             ':telefone'=>$empresaModel->getTelefone(),
@@ -39,6 +39,16 @@ class EmpresaDAO{
         $stmt->bindParam(':cnpj',$cnpj,PDO::PARAM_STR);
         $stmt ->execute();
         return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+
+    public function atualizarDados($nomeEmpresa, $descricao, $cnpj){
+        $sql = "UPDATE empresa SET descricao = :descricao, nomeEmpresa = :nomeEmpresa WHERE cnpj = :cnpj";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bindParam(':nomeEmpresa',$nomeEmpresa, PDO::PARAM_STR);
+        $stmt->bindParam(':descricao',$descricao, PDO::PARAM_STR);
+        $stmt->bindParam(':cnpj',$cnpj, PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->rowCount() > 0;
     }
 
     //criar query para select

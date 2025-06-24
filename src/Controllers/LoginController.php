@@ -29,7 +29,7 @@
                 $_SESSION['telefone'] = $empresa['telefone'];
 
                 // dados para mudar a descrição e nome da empresa
-                $_SESSION['nome_empresa'] = $empresa['nome_empresa'];
+                $_SESSION['nomeEmpresa'] = $empresa['nomeEmpresa'];
                 $_SESSION['descricao'] = $empresa['descricao'];
             } else {    
                 http_response_code(401);

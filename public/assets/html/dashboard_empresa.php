@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../css/styles-dashboard.css">
+    <link rel="stylesheet" href="../css/styles-dashboard-empresa.css">
     <link rel="shortcut icon" href="../assets/images/logo rd (1).png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="imagem"><a href="#"><i class="fa-regular fa-images"></a></i></div>
                     <div class="botoes">
-                        <button id="salvarModificacao">Salvar</buttonid>
+                        <button id="salvarModificacao">Salvar</button>
                         <button id="cancelarModificacao">Cancelar</button>
                     </div>
                 </div>
@@ -57,10 +57,10 @@
                 <div class="conteudo">
                     <form enctype="multipart/form-data" id="formPost" method="POST">
                         <label for="name">Nome do produto</label>
-                        <input type="text" placeholder="Adicione o nome do produto" name="nome_produto">
+                        <input type="text" placeholder="Adicione o nome do produto" name="nomeProduto">
 
                         <label for="descricao">Descrição do produto</label>
-                        <input type="text" placeholder="Adicione uma descrição" name="descricao_produto">
+                        <input type="text" placeholder="Adicione uma descrição" name="descricaoProduto">
 
                         <label for="preco">Preço do produto</label>
                         <input type="number" placeholder="Adicione o preço" name="preco">
@@ -100,6 +100,7 @@
         </nav>
     </header>
     <div class="capa">
+        
         <div class="imagem">
             <!-- <img src="../assets/images/mkimports.png" alt=""> -->
         </div>
@@ -113,11 +114,22 @@
         <span>Avaliações</span>
     </div>
 
-    <div class="posts" id="post">
+    <div class="add-posts" id="post">
         <a href="#"><img src="../images/adicionar-botao.png" alt=""></a>
-            <!-- <a href="https://www.flaticon.com/br/icones-gratis/adicionar" title="adicionar ícones">Adicionar ícones criados por Karacis - Flaticon</a> -->
         <h1>Adicionar posts</h1>
     </div>
+    
+    <div class="imagem-post">
+        <img src="" alt="" id="imagemProduto">
+        <div class="textos-post">
+        <span id="descProduto"></span>
+        <span id="precProduto"></span>
+        <!-- <img src="../images/fundo.jpg" alt=""> -->
+    </div>
+    
+    
+    
+</div>
 
     <script src="../js/popup.js"></script>
     <script src="../js/posts.js"></script>

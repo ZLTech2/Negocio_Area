@@ -66,8 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const descInput = descricao.value;
         titulo.innerHTML = nomeInput;
         descLoja.innerHTML = descInput;
-
-
         fecharTodosPopups();
     })
 

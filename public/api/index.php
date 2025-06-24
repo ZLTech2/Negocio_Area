@@ -6,6 +6,7 @@
     use src\Controllers\EmpresaController;
     use src\Controllers\LoginController;
     use src\Controllers\PostController;
+    use src\Controllers\DashboardController;
 
     $router = new Routes();
     $router->add('POST','/index.php/api/empresa',[new EmpresaController(),'criar']);
@@ -16,6 +17,10 @@
     $router->add('POST','/index.php/api/cliente',[new ClienteController(),'cadastrarCliente']);
 
     $router->add('POST','/index.php/api/post',[new PostController(),'criarPost']);
+
+    $router->add('GET','/index.php/api/dados',[new DashboardController(),'dadosSessao']);
+
+    $router->add('GET','/index.php/api/mostrarPosts',[new PostController(),'mostrarPosts']);
 
     $router->handleRequest();
 ?>
