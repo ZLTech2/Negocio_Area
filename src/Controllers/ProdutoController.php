@@ -1,12 +1,12 @@
 <?php
     namespace src\Controllers;
-    use src\Services\PostService;
+    use src\Services\ProdutoService;
 
-    class PostController{
+    class ProdutoController{
         private $service;
 
         public function __construct(){
-            $this->service = new PostService();
+            $this->service = new ProdutoService();
         }
 
         public function criarPost(){

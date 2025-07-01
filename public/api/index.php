@@ -5,7 +5,7 @@
     use src\Controllers\ClienteController;
     use src\Controllers\EmpresaController;
     use src\Controllers\LoginController;
-    use src\Controllers\PostController;
+    use src\Controllers\ProdutoController;
     use src\Controllers\DashboardController;
 
     $router = new Routes();
@@ -16,11 +16,11 @@
     // rota para cadastrar cliente
     $router->add('POST','/index.php/api/cliente',[new ClienteController(),'cadastrarCliente']);
 
-    $router->add('POST','/index.php/api/post',[new PostController(),'criarPost']);
+    $router->add('POST','/index.php/api/post',[new ProdutoController(),'criarPost']);
 
     $router->add('GET','/index.php/api/dados',[new DashboardController(),'dadosSessao']);
 
-    $router->add('GET','/index.php/api/mostrarPosts',[new PostController(),'mostrarPosts']);
+    $router->add('GET','/index.php/api/mostrarPosts',[new ProdutoController(),'mostrarPosts']);
 
     $router->handleRequest();
 ?>
