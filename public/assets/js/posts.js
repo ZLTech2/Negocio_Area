@@ -23,6 +23,7 @@ formPost.addEventListener('submit',function(e){
     })
     document.querySelector('.imagem-post').style.display = 'flex';
     // const imgProduto = document.getElementById('imgProduto');
+    // comentario
     // const nomeProduto = document.getElementById('nomeProduto');
 })
 
