@@ -40,6 +40,17 @@
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
 
+        public function findById($idPost){
+            $sql = "SELECT * FROM post where idPost = :idPost";
+            $stmt = $this->conn->prepare($sql);
+            $stmt->execute([
+                ':idPost' => $idPost
+            ]);
+            if($stmt->rowCount() > 0){
+                return $stmt->fetch(PDO::FETCH_ASSOC);
+            }
+        }
+
         // excluir posts
         public function delete(){
             $sql = "DELETE FROM post WHERE idPost = :idPost";

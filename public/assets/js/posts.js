@@ -1,9 +1,9 @@
 const formPost = document.getElementById('formPost');
 const url = "http://localhost/negocio_area/public/api/index.php/api/post";
 const msg = document.getElementById('msg')
-const descricaoProduto = document.getElementById('descProduto');
-const precoProduto = document.getElementById('precProduto');
-const imagemProduto = document.getElementById('imagemProduto')
+const nomeProduto = document.getElementById('nomeProduto');
+const precoProduto = document.getElementById('precoProduto');
+const imagemProduto = document.getElementById('imgProduto');
 
 formPost.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -26,9 +26,18 @@ formPost.addEventListener('submit', function (e) {
         msg.status === 'error'
     })
     document.querySelector('.imagem-post').style.display = 'flex';
-    // const imgProduto = document.getElementById('imgProduto');
-    // comentario
-    // const nomeProduto = document.getElementById('nomeProduto');
+    nomeProduto.textContent = formData.get('nomeProduto');
+    precoProduto.textContent = `R$ ${formData.get('preco')}`;
+    const file = formData.get('imgProduto');
+    if (file && file.size > 0) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            imagemProduto.src = e.target.result;
+        }
+        reader.readAsDataURL(file);
+    } else {
+        imagemProduto.src = '';
+    }
 })
 
 const titulo = document.getElementById('title-loja')

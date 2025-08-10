@@ -59,16 +59,16 @@
                     <div class="conteudo">
                         <form enctype="multipart/form-data" id="formPost" method="POST">
                             <label for="name">Nome do produto</label>
-                            <input type="text" placeholder="Adicione o nome do produto" name="nome_produto">
+                            <input type="text" placeholder="Adicione o nome do produto" name="nomeProduto">
 
                             <label for="descricao">Descrição do produto</label>
-                            <input type="text" placeholder="Adicione uma descrição" name="descricao_produto">
+                            <input type="text" placeholder="Adicione uma descrição" name="descricaoProduto">
 
                             <label for="preco">Preço do produto</label>
                             <input type="number" placeholder="Adicione o preço" name="preco">
 
                             <label for="descricao">Imagem</label>
-                            <input type="file" name="imagem" placeholder="Adicione uma imagem">
+                            <input type="file" name="imgProduto" placeholder="Adicione uma imagem">
                             <div id="msg"></div>
                             <div class="botoes">
                                 <button id="salvarDescricao">Salvar</button>
@@ -122,7 +122,7 @@
     </div>
 
     <div class="container">
-        <div class="imagem-post" style="display: none;">
+        <div class="imagem-post" style="display: none;" name="imagem-post">
             <div class="item-imagem">
                 <img src="" alt="" id="imgProduto">
                 <span id="nomeProduto"></span>

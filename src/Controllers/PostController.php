@@ -14,7 +14,7 @@
                 session_start();
             }
             // upload da imagem
-            $foto =  $_FILES['imagem'] ?? null;
+            $foto =  $_FILES['imgProduto'] ?? null;
             if($foto && $foto['error'] ===0){
                 $extensao = pathinfo($foto['name'], PATHINFO_EXTENSION);
                 $nomeArquivo = time() . '_' . basename($foto['name']);
@@ -51,6 +51,8 @@
         public function mostrarPosts(){
             session_start();
             $cnpj = $_SESSION['cnpj']??null;
+            
+
             if(!$cnpj){
                 echo json_encode(['status' => 'error', 'msg' => 'Não logado']);
                 return;
@@ -58,5 +60,18 @@
             $posts = $this->service->listar($cnpj);
             echo json_encode($posts);
         }
+
+        public function mostrarPostPorId($id){
+            session_start();
+            $cnpj = $_SESSION['cnpj']??null;
+
+            if(!$cnpj){
+                echo json_encode(['status' => 'error', 'msg' => 'Não logado']);
+                return;
+            }
+            $post = $this->service->buscarPorId($id);
+            echo json_encode($post);
+        }
+        
     }
 ?>

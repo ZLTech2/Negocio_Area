@@ -18,5 +18,9 @@
         public function listar($cnpj){
             return $this->dao->list($cnpj);
         }   
+
+        public function buscarPorId($idPost){
+            return $this->dao->findById($idPost);
+        }
     }
 ?>
