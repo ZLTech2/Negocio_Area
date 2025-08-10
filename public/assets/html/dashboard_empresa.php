@@ -56,7 +56,7 @@
             <!-- <div class="imagems"><a href="#"><i class="fa-regular fa-images"></i></a></div> -->
                 <div class="conteudo">
                     <form enctype="multipart/form-data" id="formPost" method="POST">
-                        <i class="fa-regular fa-circle-xmark" style="" id="fechar"></i>
+                        <!-- <i class="fa-regular fa-circle-xmark" style="" id="fechar"></i> -->
                         <label for="name">Nome do produto</label>
                         <input type="text" placeholder="Adicione o nome do produto" name="nomeProduto">
 
@@ -120,11 +120,11 @@
         <h1>Adicionar posts</h1>
     </div>
     
-    <div class="imagem-post">
-        <img src="" alt="" id="imagemProduto">
-        <div class="textos-post">
-        <span id="descProduto"></span>
-        <span id="precProduto"></span>
+    <!-- <div class="imagem-post"> -->
+        <!-- <img src="" alt="" id="imagemProduto"> -->
+        <!-- <div class="textos-post"> -->
+        <!-- <span id="descProduto"></span> -->
+        <!-- <span id="precProduto"></span> -->
         <!-- <img src="../images/fundo.jpg" alt=""> -->
     </div>
     
