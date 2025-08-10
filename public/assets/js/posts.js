@@ -21,6 +21,9 @@ formPost.addEventListener('submit',function(e){
         msg.innerText = "Erro ao cadastrar post"
         msg.status === 'error'
     })
+    document.querySelector('.imagem-post').style.display = 'flex';
+    // const imgProduto = document.getElementById('imgProduto');
+    // const nomeProduto = document.getElementById('nomeProduto');
 })
 
 const titulo = document.getElementById('title-loja')
@@ -36,4 +39,3 @@ fetch('http://localhost/negocio_area/public/api/index.php/api/dados')
 });
 
  const salvarDescritivo = document.getElementById('salvarDescritivo');
- 
