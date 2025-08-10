@@ -13,29 +13,22 @@ formPost.addEventListener('submit', function (e) {
         method: 'POST',
         body: formData
     })
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-
-            if (data.status === 'success') {
-                msg.innerText = "Post cadastrado com sucesso"
-                msg.className = 'success'
-                
-
-                if (data.imagem) {
-                    imagemProduto.src = "http://localhost/negocio_area/" + data.imagem;
-                    imagemProduto.style.display = 'block';
-                }
-
-                formPost.reset()
-            }
-
-        })
-        .catch(error => {
-            console.error('Erro', error)
-            msg.innerText = "Erro ao cadastrar post"
-            msg.status === 'error'
-        })
+    .then(response=>response.json())
+    .then(data =>{
+        console.log(data)
+        msg.innerText = "Post cadastrado com sucesso"
+        msg.status === 'success'
+        formPost.reset()
+    })
+    .catch(error=>{
+        console.error('Erro',error)
+        msg.innerText = "Erro ao cadastrar post"
+        msg.status === 'error'
+    })
+    document.querySelector('.imagem-post').style.display = 'flex';
+    // const imgProduto = document.getElementById('imgProduto');
+    // comentario
+    // const nomeProduto = document.getElementById('nomeProduto');
 })
 
 const titulo = document.getElementById('title-loja')
