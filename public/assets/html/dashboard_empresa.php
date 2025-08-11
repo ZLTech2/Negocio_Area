@@ -102,8 +102,7 @@
         </nav>
     </header>
     <div class="capa">
-
-        <div class="imagem">
+        <div class="imagem" id="imagem-capa">
             <!-- <img src="../assets/images/mkimports.png" alt=""> -->
         </div>
         <div class="titulo-loja">
