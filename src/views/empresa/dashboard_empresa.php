@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../css/styles-dashboard-empresa.css">
-    <link rel="shortcut icon" href="../assets/images/logo rd (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../public/assets/css/styles-dashboard-empresa.css">
+    <link rel="shortcut icon" href="../../../public/assets/images/logo rd (1).png" type="image/x-icon">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 
@@ -15,7 +15,7 @@
         <nav>
             <ul class="nav-list">
                 <div class="logo">
-                    <img src="../images/logo rd (1).png" alt="">
+                    <img src="../../../public/assets/images/logo rd (1).png" alt="">
                     <p>Personalização</p>
                 </div>
                 <!-- <li><a href="../index.php">Index</a></li> -->
@@ -96,7 +96,7 @@
                     </form>
                 </div>
 
-                <li><a href="../../../src/Controllers/Logout.php">Sair</a></li>
+                <li><a href="../../Controllers/Logout.php">Sair</a></li>
                 <!-- gerar uma requisição de logado -->
             </ul>
         </nav>
@@ -116,7 +116,7 @@
     </div>
 
     <div class="add-posts" id="post">
-        <a href="#"><img src="../images/adicionar-botao.png" alt=""></a>
+        <a href="#"><img src="../../../public/assets/images/adicionar-botao.png" alt=""></a>
         <h1>Adicionar posts</h1>
     </div>
 
@@ -130,8 +130,8 @@
         </div>
     </div>
 
-    <script src="../js/popup.js"></script>
-    <script src="../js/posts.js"></script>
+    <script src="../../../public/assets/js/popup.js"></script>
+    <script src="../../../public/assets/js/posts.js"></script>
 </body>
 
 </html>

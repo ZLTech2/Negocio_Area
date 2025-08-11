@@ -1,34 +1,34 @@
 <?php
-    session_start();
-    if (isset($_SESSION["logado"]) && $_SESSION["logado"] ===true) {
-        header("Location: dashboard.php");
-        exit;
-    }
+session_start();
+if (isset($_SESSION["logado"]) && $_SESSION["logado"] === true) {
+    header("Location: dashboard.php");
+    exit;
+}
 
-    $msgErro = "";
-    if (isset($_SESSION["erro"])){
-        $msgErro = $_SESSION["erro"];
-        unset($_SESSION["erro"]);
-    }
+$msgErro = "";
+if (isset($_SESSION["erro"])) {
+    $msgErro = $_SESSION["erro"];
+    unset($_SESSION["erro"]);
+}
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../css/styles-login.css">
-    <link rel="shortcut icon" href="../images/logo rd (1).png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../../public/assets/css/styles-login.css">
+    <link rel="shortcut icon" href="../../public/assets/images/logo rd (1).png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
-</head>
+
 <body>
     <?php
-    include ('header.html');
+    include('header.html');
     ?>
     <main>
         <div class="container-form">
@@ -46,7 +46,7 @@
                 <button type="submit">Entrar</button>
 
                 <p><a href="#">Esqueci a senha</a></p>
-                <p>Não possui conta? <a href="../html/tipo_cadastro.php">Cadastre-se</a></p>
+                <p>Não possui conta? <a href="./tipo_cadastro.php">Cadastre-se</a></p>
 
                 <div class="redes-sociais">
                     <span><a href="#"><i class="fa-brands fa-google"></i></a></span>
@@ -56,8 +56,9 @@
             </form>
 
         </div>
-        </main>
-        <script src="../js/login.js" defer></script>
-        <script src="../js/menu.js"></script>
+    </main>
+    <script src="../../public/assets/js/login.js" defer></script>
+    <script src="../../public/assets/js/menu.js"></script>
 </body>
+
 </html>
