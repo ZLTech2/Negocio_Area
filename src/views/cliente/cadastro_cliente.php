@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="../css/styles-cadastro.css">
-    <link rel="shortcut icon" href="../images/logo rd (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../public/assets/css/styles-cadastro.css">
+    <link rel="shortcut icon" href="../../../public/assets/images/logo rd (1).png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
         <nav>
           <div class="nav-list">
                 <div class="logo">
-                    <a href="../../index.html"><img src="../images/logo rd (1).png" alt=""></a>
+                    <a href="../../../public/index.html"><img src="../../../public/assets/images/logo rd (1).png" alt=""></a>
                 </div>
 
                 <div class="hamburguer" id="hamburguer">
@@ -28,8 +28,8 @@
                   <!-- <li><a href="../html/personalize.php">Personalize</a></li> -->
                   <!-- <li><a href="#myCarousel">Sobre</a></li> -->
                   <li><a href="http://zltech.freesite.online/?i=1"target="_blank">ZL Tech</a></li>
-                  <li> <a href="./tipo_cadastro.php">Cadastrar</a></li>
-                  <li><a href="./login.php">Entrar</a></li>
+                  <li> <a href="../tipo_cadastro.php">Cadastrar</a></li>
+                  <li><a href="../login.php">Entrar</a></li>
               </ul>
             </div>
         </nav>
@@ -56,8 +56,8 @@
                 <input type="password" name="confirmar_senha" id="confirmar_senha" minlength="8" placeholder="Confirme sua senha" required>
                 
                 <button type="submit">Cadastre-se</button>
-                <a href="./login.php">Entrar</a>                
-                <a href="./tipo_cadastro.php">Voltar</a>                
+                <a href="../login.php">Entrar</a>                
+                <a href="../tipo_cadastro.php">Voltar</a>                
 
                 <div class="msg" id="msg"></div>
         </div>
@@ -67,8 +67,8 @@
         </footer> -->
     </main>
     <!-- <script src="../js/cadastro_empresa.js" defer></script> -->
-    <script src="../js/cadastro_cliente.js" defer></script>
-    <script src="../js/menu.js"></script>
+    <script src="../../../public/assets/js/cadastro_cliente.js" defer></script>
+    <script src="../../../public/assets/js/menu.js"></script>
     
 </body>
 </html>
