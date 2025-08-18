@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #d9d4d6;
+  /* background-color: #d9d4d6; */
 }
 
 header {
@@ -15,6 +16,7 @@ header {
   width: 200px;
   height: 100vh;
   position: fixed;
+  box-shadow: 1px 1px 9px 1px;
 }
 
 .logo img {
@@ -88,7 +90,7 @@ header {
   flex-direction: column;
   gap: 10px;
   flex-wrap: wrap;
-  margin: 10px;
+  margin-top: 50px;
 }
 
 .botoes button {
@@ -158,15 +160,16 @@ textarea:focus {
   color: #7800ff;
 }
 
+.nav-list li a:hover {
+  color: #ac6ad3;
+}
+
 .sair {
   /* display: flex; */
   position: relative;
   top: 400px;
 }
 
-.nav-list li a:hover {
-  color: white;
-}
 
 button {
   cursor: pointer;
@@ -179,7 +182,7 @@ button {
   /* border: solid red 1px; */
   height: 20vh;
   background-color: #983cff;
-  box-shadow: 6px 3px 5px 2px;
+  box-shadow: 1px 3px 9px 1px;
 }
 
 .teste span {
@@ -213,7 +216,7 @@ button {
 
 .plano {
   background-color: rgb(94, 94, 94);
-  height: 25vh;
+  height: 45vh;
   width: 100%;
   border-radius: 30px;
   display: flex;
@@ -239,7 +242,7 @@ i {
   width: 25%;
   border-radius: 50%;
   position: relative;
-  top: 70%;
+  top: 15%;
   transform: translate(-50%, -50%);
   left: 50%;
   display: flex;
@@ -293,7 +296,6 @@ i {
   ;
   position: relative;
   left: 205px;
-  top: 2px;
 }
 
 
@@ -316,7 +318,7 @@ i {
   flex-direction: column;
   /* border: solid red 1px; */
   margin: 0 auto;
-  background-color: #d9d4d6;
+  /* background-color: #d9d4d6; */
 
 }
 
