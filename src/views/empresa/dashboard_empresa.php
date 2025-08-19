@@ -24,14 +24,15 @@
                 <li><a href="#" id="abrirPopupDescritivo">Mudar descrição</a></li>
                 <div class="popup" id="popupDescritivo">
                     <div class="conteudo">
-                        <form id="form-descricao" method="post">
+                        <form id="formDescricao" method="post">
                             <label for="name">Nome</label>
-                            <input id="nome" type="text" placeholder="Adicione o nome da sua empresa/loja">
+                            <input name="nomeEmpresa" type="text" placeholder="Adicione o nome da sua empresa/loja">
                             <label for="descricao">Descrição</label>
-                            <input id="descricao" type="text" placeholder="Adicione uma descrição">
+                            <input name="descricao" type="text" placeholder="Adicione uma descrição">
                             <div class="botoes">
                                 <button type="submit" id="salvarDescritivo">Salvar</button>
-                                <button id="cancelar">Cancelar</button>
+                                <button id="cancelar" type="button">Cancelar</button>
+                                <div id="msg"></div>
                             </div>
                         </form>
                     </div>
@@ -130,8 +131,9 @@
         </div>
     </div>
 
-    <script src="../../../public/assets/js/popup.js"></script>
-    <script src="../../../public/assets/js/posts.js"></script>
+    <script src="../../../public/assets/js/popup.js" defer></script>
+    <script src="../../../public/assets/js/posts.js" defer></script>
+    <script src="../../../public/assets/js/descricao.js" defer></script>
 </body>
 
 </html>
