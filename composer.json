@@ -1,5 +1,7 @@
 {
     "name": "user/meudeus",
+    "type": "project",
+    "license": "Proprietary",
     "autoload": {
         "psr-4": {
             "src\\":"src/",
@@ -7,5 +9,9 @@
             "config\\":"config/"
         }
     },
+    "authors": [{
+        "name": "Rafael Benicio"
+    }],
+    
     "require": {}
 }
