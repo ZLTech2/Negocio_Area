@@ -1,5 +1,5 @@
 {
-    "name": "user/meudeus",
+    "name": "zltech/negocio-na-area",
     "type": "project",
     "license": "Proprietary",
     "autoload": {
@@ -10,7 +10,7 @@
         }
     },
     "authors": [{
-        "name": "Rafael Benicio"
+        "name": "Rafael Benicio, Artur Normandia, Tayna dos Santos, Yasmin Monteiro"
     }],
     
     "require": {}
