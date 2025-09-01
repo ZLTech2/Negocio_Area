@@ -1,7 +1,7 @@
 <?php
     namespace src\Models;
 
-    class PostModel{
+    class ProdutoModel{
         private $nomeProduto;
         private $descricaoProduto;
         private $preco;

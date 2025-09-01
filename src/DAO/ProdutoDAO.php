@@ -2,10 +2,10 @@
     namespace src\DAO;
 
     use PDO;
-    use src\Models\PostModel;
+    use src\Models\ProdutoModel;
     use config\Connection;
 
-    class PostDAO{
+    class ProdutoDAO{
         public $conn;
         
         public function __construct(){
@@ -13,8 +13,8 @@
             $this->conn = $database->getConnection();
         }
 
-        public function save(PostModel $postModel){
-            $sql = "INSERT INTO post (nomeProduto, descricaoProduto, preco, imagem, telefone, cnpj) 
+        public function save(ProdutoModel $postModel){
+            $sql = "INSERT INTO produtos (nomeProduto, descricaoProduto, preco, imagem, telefone, cnpj) 
             VALUES (:nomeProduto, :descricaoProduto, :preco, :imagem, :telefone, :cnpj)";
 
             $stmt = $this->conn->prepare($sql);
@@ -31,7 +31,7 @@
 
         // listar todos os posts
         public function list(){
-            $sql = "SELECT descricaoProduto, preco, imagem FROM post ORDER BY idPost DESC LIMIT 1";
+            $sql = "SELECT descricaoProduto, preco, imagem FROM produtos ORDER BY idPost DESC LIMIT 1";
             $stmt = $this->conn->prepare($sql);
 
             $stmt->execute();
@@ -40,7 +40,7 @@
 
         // excluir posts
         public function delete(){
-            $sql = "DELETE FROM post WHERE idPost = :idPost";
+            $sql = "DELETE FROM produtos WHERE idPost = :idPost";
         }
 
         // editar posts

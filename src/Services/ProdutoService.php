@@ -1,17 +1,17 @@
 <?php
     namespace src\Services;
-    use src\DAO\PostDAO;
-    use src\Models\PostModel;
+    use src\DAO\ProdutoDAO;
+    use src\Models\ProdutoModel;
 
-    class PostService{
+    class ProdutoService{
         private $dao;
 
         public function __construct(){
-            $this->dao = new PostDAO();
+            $this->dao = new ProdutoDAO();
         }
 
         public function criar($nomeProduto, $descricaoProduto, $preco,$imagem, $telefone, $cnpj){
-            $post = new PostModel($nomeProduto, $descricaoProduto, $preco, $imagem, $telefone, $cnpj);
+            $post = new ProdutoModel($nomeProduto, $descricaoProduto, $preco, $imagem, $telefone, $cnpj);
             return $this->dao->save($post);
         }
 
