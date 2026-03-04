@@ -34,7 +34,7 @@ header {
 
 #msg {
    font-size: 20px;
-   color: var(--cor-amarela);
+   color: #000;
    text-transform: uppercase;
 }
 
