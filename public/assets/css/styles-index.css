@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
    --cor-roxa: rgb(120, 0, 255);
    --cor-amarela: rgb(255, 246, 0);
@@ -7,7 +9,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: "Anton", sans-serif;
+   font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -35,7 +37,6 @@ header {
    margin: 25px;
    list-style-type: none;
    padding: 20px;
-   text-transform: uppercase;
 }
 
 .menu li a {
@@ -45,7 +46,7 @@ header {
 }
 
 .menu li a:hover {
-   color: var(--cor-amarela);
+   color: #000;
    transition: 0.4s ease;
 }
 
@@ -105,7 +106,7 @@ h2 {
    height: 2.5rem;
    text-align: center;
    text-decoration: none;
-   color: var(--cor-amarela);
+   color: rgb(255,255,255);
 }
 
 #sobre a:hover {

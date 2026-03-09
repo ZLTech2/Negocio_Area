@@ -19,7 +19,7 @@ if (isset($_SESSION["erro"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="../../public/assets/css/styles-login.css">
+    <link rel="stylesheet" href="../../public/assets/css/styles-login.css?v=<?php echo time(); ?>">
     <link rel="shortcut icon" href="../../public/assets/images/logo rd (1).png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,14 +43,16 @@ if (isset($_SESSION["erro"])) {
                 <label for="senha">Senha:</label>
                 <input type="password" id="login_senha" name="senha" placeholder="Digite sua senha" required>
 
-                <button type="submit">Entrar</button>
+                <div class="botoes">
+                    <button type="submit">Entrar</button>
 
-                <p><a href="#">Esqueci a senha</a></p>
-                <p>Não possui conta? <a href="./tipo_cadastro.php">Cadastre-se</a></p>
+                    <p><a href="#">Esqueci a senha</a></p>
+                    <p>Não possui conta? <a href="./tipo_cadastro.php">Cadastre-se</a></p>
 
-                <div class="redes-sociais">
-                    <span><a href="#"><i class="fa-brands fa-google"></i></a></span>
-                    <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
+                    <div class="redes-sociais">
+                        <span><a href="#"><i class="fa-brands fa-google"></i></a></span>
+                        <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
+                    </div>
                 </div>
                 <div id="msg"></div>
             </form>

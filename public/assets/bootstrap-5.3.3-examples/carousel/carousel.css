@@ -18,7 +18,6 @@ body {
 -------------------------------------------------- */
 .carousel span{
   font-size: 40px;
-  text-transform: uppercase;
   max-width: 30%;
 }
 /* Carousel base class */
