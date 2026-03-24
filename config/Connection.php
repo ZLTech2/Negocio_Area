@@ -4,16 +4,17 @@
     use PDOException;
 
     class Connection{
-        private $username ='root';
-        private $password = '';
-        private $host = 'localhost';
-        private $db_name = 'db_projeto1';
+        private $config;
         public $conn;
+
+        public function __construct()
+        {
+            $this->config = require __DIR__ . "/env.php";
+        }
 
         public function getConnection(){
             try{
-                $this->conn = new PDO("mysql:host=$this->host;dbname=$this->db_name",$this->username, $this->password);
-                $this->conn->exec("set names utf8");
+                $this->conn = new PDO("mysql:host={$this->config['host']};dbname={$this->config['db_name']};charset=utf8mb4",$this->config['username'], $this->config['password']);
             }catch(PDOException $error){
                 echo "Erro: ".$error->getMessage();
             }
