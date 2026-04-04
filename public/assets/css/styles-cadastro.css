@@ -33,9 +33,9 @@ header {
 }
 
 #msg {
-   font-size: 20px;
+   font-size: 16px;
    color: #000;
-   text-transform: uppercase;
+   text-align: center;
 }
 
 .nav-list {
@@ -43,7 +43,7 @@ header {
    align-items: center;
    justify-content: center;
    margin: 0;
-   margin-bottom: 60px;
+   margin-bottom: 30px;
 }
 
 .menu {
@@ -88,100 +88,94 @@ header {
    height: auto;
 }
 
-.container-form h1 {
-   font-size: 50px;
-   color: rgb(255, 255, 255);
-   margin-top: 50px;
-}
 
 .container-form form {
-   /* border: solid blue 1px; */
-   width: 40%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+   width: 50%;
    padding: 20px;
-   margin: 20px;
    background-color: rgb(255, 255, 255);
    border-radius: 20px;
-   margin-bottom: 10%;
+   /* margin-bottom: 10%; */
    height: auto;
 }
 
-.container-form form input,
-label,
-button {
-   margin-top: 20px;
-
+.input-bloqueado {
+    background-color: #f0f0f0;
+    cursor: not-allowed;       
+    color: #666;              
+    border: 1px solid #ddd;
 }
 
-.container-form form input {
-   padding-left: 20px;
+.campos{
+   /* border: solid red 1px; */
+   display: flex;
+   flex-wrap: wrap;
+   padding-bottom: 20px;
+   justify-content: center;
 }
 
-.container-form label {
-   color: rgb(0, 0, 0);
-   /* border: solid red 1px;  */
-   width: 72%;
-
+.input-label{
+   display: flex;
+   flex-direction: column;
+   padding-left: 10px;
+   margin-left: 10px;
+   margin-top: 10px;
 }
+
+.input-label input{
+   padding-left: 10px;
+}
+.input-label label{
+   padding-bottom: 10px;
+   padding-bottom: 10px;
+}
+
+
 
 .container-form label,
 .container-form form button {
-   font-size: 20px;
+   font-size: 16px;
+   font-weight: bold;
    /* text-transform: uppercase; */
 }
 
-.container-form form input,
+.container-form form input, select,
 .container-form form button {
-   box-shadow: 1px 3px 5px 1px #2c292e;
+   border: solid 1px;
 }
 
 .container-form form input:focus {
    outline: 2px solid var(--cor-roxa);
-   box-shadow: 0 0 5px var(--cor-roxa);
+}
+.container-form form input, select {
+   border-radius: 5px;
+   /* display: flex; */
+   height:2.5rem;
+   width: 300px;
 }
 
-/* .container-form form input[type="email"]{
-   border: solid red 5px;
-} */
-
-.container-form form input {
-   border-radius: 10px;
-   border: none;
-   width: 78%;
-   display: flex;
-   height: 3.5rem;
+.input-label p{
+   text-align: center;
 }
 
-.container-form form a {
-   /* border: solid red 1px; */
-   font-size: 24px;
-   text-decoration: none;
-   /* text-transform: uppercase; */
-}
-
-
-
-.container-form form button, .container-form form a{
-   border: solid 1px;
+.container-form form a{
    /* max-width: 70%; */
-   width: 35%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   cursor: pointer;
-   background-color: var(--cor-roxa);
    font-weight: bold;
-   margin-top: 52px;
-   border-radius: 10px;
-   height: 3.5rem;
-   color: #ffffff;
-
-
+   margin-top: 10px;
+   color: #000000;
 }
 
-.container-form form button:hover, .container-form form a:hover {
+button{
+   background: var(--cor-roxa);
+   width: 200px;
+   margin: 0 auto;
+   border-radius: 5px;
+   height: 2.5rem;
+   color: #ffffff;
+   cursor: pointer;
+   margin-bottom: 20px;
+}
+
+.container-form form button:hover {
    background-color: rgb(167, 118, 224);
    transition: 0.4s ease-in;
 }
