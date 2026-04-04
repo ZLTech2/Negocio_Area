@@ -86,116 +86,107 @@ header {
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   width: 100%;
+   height: auto;
 }
 
-.container-form h1 {
-   font-size: 50px;
-   color: rgb(255, 255, 255);
-   text-transform: uppercase;
-}
 
 .container-form form {
-   /* border: solid blue 1px; */
-   width: 25%;
+   width: 30%;
+   padding: 20px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 20px;
+   /* margin-bottom: 10%; */
+   height: auto;
    display: flex;
    flex-direction: column;
+}
+
+.input-bloqueado {
+    background-color: #f0f0f0;
+    cursor: not-allowed;       
+    color: #666;              
+    border: 1px solid #ddd;
+}
+
+
+
+.campos{
+   /* border: solid red 1px; */
+   display: flex;
+   flex-wrap: wrap;
+   padding-bottom: 20px;
    justify-content: center;
-   padding: 20px;
-   margin: 20px;
-   background-color: rgb(255, 255, 255);
-   border-radius: 15px;
-   height: 50vh;
+   flex-direction: column;
+   align-items: center;
+}
+
+.input-label{
+   display: flex;
+   flex-direction: column;
+   padding-left: 10px;
+   margin-left: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.input-label input{
+   padding-left: 10px;
+}
+.input-label label{
+   padding-bottom: 10px;
+   padding-bottom: 10px;
+}
+
+
+
+.container-form label,
+.container-form form button {
+   font-size: 16px;
+   font-weight: bold;
+   /* text-transform: uppercase; */
+}
+
+.container-form form input, select,
+.container-form form button {
+   border: solid 1px;
 }
 
 .container-form form input:focus {
    outline: 2px solid var(--cor-roxa);
-   box-shadow: 0 0 5px var(--cor-roxa) ;
-
 }
-
-.container-form label {
-   color: rgb(0,0,0);
-   /* border: solid red 1px;  */
-   width: 50%;
-   margin-top: 20px;
-   /* a primeira label esta imovel */
-}
-
-.container-form label,
-button {
-   font-size: 20px;
-}
-
-.container-form form input{
-   box-shadow: 1px 1px 3px 1px #000;
-   margin-top: 20px;
-}
-.botoes{
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-}
-.container-form form input {
+.container-form form input, select {
    border-radius: 5px;
-   border: none;
-   width: 100%;
-   display: flex;
-   padding: 10px;
+   /* display: flex; */
+   height:2.5rem;
+   width: 300px;
 }
 
-.container-form form button {
-   border: solid 1px;
+.input-label p{
+   text-align: center;
+}
+
+.container-form form a{
    /* max-width: 70%; */
-   width: 40%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   cursor: pointer;
-   background-color: #983CFF;
    font-weight: bold;
-   margin-top: 35px;
+   margin-top: 10px;
+   color: #000000;
+}
+
+button{
+   background: var(--cor-roxa);
+   width: 200px;
+   margin: 0 auto;
    border-radius: 5px;
    height: 2.5rem;
-   margin-bottom: 10%;
    color: #ffffff;
-   padding: 5px;
-
+   cursor: pointer;
+   margin-bottom: 20px;
 }
 
 .container-form form button:hover {
-   background-color: rgb(144, 92, 179);
-   transition: 0.4s ease;
-}
-
-.container-form p {
-   font-size: 15px;
-   margin-bottom: 15px;
-   color: #1b0431;
-}
-
-.container-form p a {
-   color: rgb(0,0,0);
-   text-decoration: none;
-}
-
-.container-form p a:hover {
-   color: #983CFF;
-   transition: var(--transition-hover);
-}
-
-.redes-sociais {
-   margin: 20px;
-}
-
-.redes-sociais span i {
-   margin: 20px;
-   font-size: 40px;
-   color: rgb(0,0,0);
-}
-
-.redes-sociais i:hover {
-   color: var(--cor-hover);
-   transition: var(--transition-hover);
+   background-color: rgb(167, 118, 224);
+   transition: 0.4s ease-in;
 }
 
 .hamburguer {
