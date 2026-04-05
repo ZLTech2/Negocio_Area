@@ -143,7 +143,7 @@ header {
    border: solid 1px;
 }
 
-.container-form form input:focus {
+.container-form form input:focus, select:focus {
    outline: 2px solid var(--cor-roxa);
 }
 .container-form form input, select {

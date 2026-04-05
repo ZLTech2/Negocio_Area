@@ -141,6 +141,7 @@ async function buscaCEP() {
             if (document.getElementById('bairro')) document.getElementById('bairro').value = dados.bairro;
             if (document.getElementById('cidade')) document.getElementById('cidade').value = dados.localidade;
             if (document.getElementById('uf')) document.getElementById('uf').value = dados.uf;
+            if (document.getElementById('rua')) document.getElementById('rua').value = dados.logradouro;
             
             const campoRua = document.getElementById('rua');
             if (campoRua) {
@@ -155,7 +156,7 @@ async function buscaCEP() {
                 }
             }
 
-            const campoBairro = document.getElementById('rua');
+            const campoBairro = document.getElementById('bairro');
             if (campoBairro) {
                 campoBairro.value = dados.bairro;
                 if (dados.bairro!== "") {
